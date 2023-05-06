@@ -28,6 +28,7 @@
       tools:text="@tools:sample/full_names"
       android:textSize="16sp"
       android:maxLines="1"
+      android:textColor="?android:textColorPrimary"
       app:layout_constraintHorizontal_weight="1"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintStart_toEndOf="@+id/thumbnail_iv"

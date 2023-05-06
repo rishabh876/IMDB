@@ -5,9 +5,8 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.imdb.Constants
-import com.example.imdb.data.model.Movie
+import com.example.imdb.model.Movie
 import com.example.imdb.databinding.MoviesItemLayoutBinding
-import java.text.DateFormat
 
 
 class MoviesListAdapter(private val onClick: (movie: Movie)-> Unit) : RecyclerView.Adapter<MovieViewHolder>() {

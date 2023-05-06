@@ -13,13 +13,10 @@ import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
 import com.bumptech.glide.Glide
 import com.example.imdb.Constants
-import com.example.imdb.R
-import com.example.imdb.data.model.Movie
+import com.example.imdb.model.Movie
 import com.example.imdb.databinding.FragmentMovieDetailsBinding
 import com.example.imdb.viewmodel.MovieDetailsVM
 import dagger.hilt.android.AndroidEntryPoint
-import java.text.DateFormat
-import java.util.Date
 
 @AndroidEntryPoint
 class MovieDetailsFragment : Fragment() {

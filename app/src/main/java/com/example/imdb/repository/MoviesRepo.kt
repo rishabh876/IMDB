@@ -1,6 +1,6 @@
-package com.example.imdb.data
+package com.example.imdb.repository
 
-import com.example.imdb.data.model.Movie
+import com.example.imdb.model.Movie
 
 interface MoviesRepo {
   suspend fun getPopularMovies(): List<Movie>
