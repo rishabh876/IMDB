@@ -1,4 +1,4 @@
-package com.example.imdb.ui
+package com.example.imdb.ui.popularMovies
 
 import android.view.LayoutInflater
 import android.view.ViewGroup

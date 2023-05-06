@@ -1,4 +1,4 @@
-package com.example.imdb.ui
+package com.example.imdb.ui.popularMovies
 
 import android.os.Bundle
 import android.util.Log
@@ -33,7 +33,11 @@ class PopularMovieFragment : Fragment() {
   override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
     super.onViewCreated(view, savedInstanceState)
     binding.moviesRv.adapter = MoviesListAdapter {
-      findNavController().navigate(PopularMovieFragmentDirections.actionPopularMovieFragmentToMovieDetailsFragment(it.id?:0))
+      findNavController().navigate(
+        PopularMovieFragmentDirections.actionPopularMovieFragmentToMovieDetailsFragment(
+          it.id ?: 0
+        )
+      )
     }.also { adapter = it }
 
     viewModel.popularMovies.observe(viewLifecycleOwner) {

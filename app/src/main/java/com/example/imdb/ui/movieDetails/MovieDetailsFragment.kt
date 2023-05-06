@@ -1,11 +1,11 @@
-package com.example.imdb.ui
+package com.example.imdb.ui.movieDetails
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.core.os.bundleOf
+import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.DEFAULT_ARGS_KEY
 import androidx.lifecycle.viewmodel.MutableCreationExtras
@@ -13,8 +13,8 @@ import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
 import com.bumptech.glide.Glide
 import com.example.imdb.Constants
-import com.example.imdb.model.Movie
 import com.example.imdb.databinding.FragmentMovieDetailsBinding
+import com.example.imdb.model.Movie
 import com.example.imdb.viewmodel.MovieDetailsVM
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -47,7 +47,7 @@ class MovieDetailsFragment : Fragment() {
   }
 
   private fun onMovieUpdated(movie: Movie?) {
-    if(movie!=null){
+    if (movie != null) {
       binding.apply {
         Glide.with(thumbnailIv)
           .load(Constants.THUMBNAIL_ENDPOINT + movie.posterPath)
